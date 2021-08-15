@@ -6,6 +6,5 @@
 *.d
 *.o
 csr.csv
-lab003/*
-lab002/*
+lab002*
 

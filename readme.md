@@ -4,4 +4,5 @@ Original: [README](./README)
 
 working lessons:
  * l001
+ * l003
  * l004
