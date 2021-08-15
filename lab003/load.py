@@ -1,3 +1,3 @@
 #!/usr/bin/env python3
 import os
-os.system("djtgcfg prog -d Nexys4DDR -i 0 -f ./build/gateware/top.bit")
+os.system("openocd -f wukong.cfg -c 'init; pld load 0 ./build/gateware/top.bit; exit' ")

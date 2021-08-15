@@ -71,7 +71,6 @@ static void help(void)
 	puts("Available commands:");
 	puts("help                            - this command");
 	puts("reboot                          - reboot CPU");
-	puts("display                         - display test");
 	puts("led                             - led test");
 }
 
@@ -80,24 +79,13 @@ static void reboot(void)
 	ctrl_reset_write(1);
 }
 
-static void display_test(void)
-{
-	int i;
-	printf("display_test...\n");
-	for(i=0; i<6; i++) {
-		display_sel_write(i);
-		display_value_write(i);
-		display_write_write(1);
-	}
-}
-
 static void led_test(void)
 {
 	int i;
 	printf("led_test...\n");
-	for(i=0; i<32; i++) {
+	for(i=0; i<1024; i++) {
 		leds_out_write(i);
-		busy_wait(1);
+		busy_wait(10);
 	}
 }
 
@@ -113,8 +101,6 @@ static void console_service(void)
 		help();
 	else if(strcmp(token, "reboot") == 0)
 		reboot();
-	else if(strcmp(token, "display") == 0)
-		display_test();
 	else if(strcmp(token, "led") == 0)
 		led_test();
 	prompt();

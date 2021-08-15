@@ -1,0 +1,11 @@
+*~
+/*/build*
+*/__pycache__/*
+*.bin
+*.elf
+*.d
+*.o
+csr.csv
+lab003/*
+lab002/*
+
