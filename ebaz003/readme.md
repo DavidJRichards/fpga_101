@@ -5,9 +5,9 @@
  * start the Litex server $litex_server --uart --uart-port=/dev/ttyUSBX
  * in a seperate console run tests from the test diretory $./test_identifier.py or $./test_leds.py
 
-![console1](./images/Screenshot from 2021-08-17 14-04-43.png)
+![console1](./images/Screenshot_from_2021-08-17_14-04-43.png)
 
-![console2](./images/Screenshot from 2021-08-17 14-07-30.png)
+![console2](./images/Screenshot_from_2021-08-17_14-07-30.png)
 
 
 
